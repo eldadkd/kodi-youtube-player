@@ -1,0 +1,23 @@
+# Bytecode / caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.pylint.d/
+*.stats
+
+# Virtual envs (if used locally)
+.venv/
+
+# Editor / OS
+.DS_Store
+*.swp
+*~
+
+# Runtime log
+yt-listener.log
+
+# Editor project files
+.idea/
+*.code-workspace

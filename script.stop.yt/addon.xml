@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.stop.yt"
+       name="Stop YT downloads on Stop"
+       version="1.0.3"
+       provider-name="kodi-youtube-player">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.service" library="service.py"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Calls yt-listener /stop-yt when you press Stop</summary>
+    <description lang="en_GB">
+      When you press Stop in Kodi, this service requests GET http://127.0.0.1:5000/stop-yt
+      so background yt-dlp / yt_party_play.py work stops. Uses onPlayBackStopped (user Stop only),
+      not when a track ends naturally in a playlist.
+    </description>
+    <platform>all</platform>
+    <license>MIT</license>
+  </extension>
+</addon>
